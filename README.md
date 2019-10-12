@@ -1,6 +1,6 @@
 # template-responsivo-seguros-oat-unincor
 Tarefa:<br>
-Desenvolver um sistema web, utilizando recursos que tornem seu layout responsivo.<r>
+</i>Desenvolver um sistema web, utilizando recursos que tornem seu layout responsivo.</i><br>
   
  O projeto será desenvolvido individualmente por cada aluno, com a orientação do professor da disciplina. Data de entrega: 20/11/19 <br>
  
