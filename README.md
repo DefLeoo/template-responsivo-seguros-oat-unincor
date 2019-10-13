@@ -20,4 +20,7 @@ Telas do sistema:<br>
 
 - Início <br>- Telas para CRUD (Criação, Listagem, Atualização e Remoção) <br>.- Sobre Resoluções a serem consideradas: - 320px - 600px - 1024px - 1200px <br>Estrutura básica do layout do sistema: <br>- Cabeçalho <br>- Menu <br>- Área de exibição do conteúdo da página <br>- Rodapé
 
+![Captura de tela de 2019-10-13 13-00-43](https://user-images.githubusercontent.com/27355729/66718524-48f20a80-edbb-11e9-8f35-44b2222bc0a6.png)
+
+
 
