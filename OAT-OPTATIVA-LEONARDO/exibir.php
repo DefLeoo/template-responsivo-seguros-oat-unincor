@@ -62,8 +62,10 @@ style=" margin-top: 20px;">
         <td><?= $person->cpf; ?></td> 
         <td><?= $person->telefone; ?></td>
         <td><?= $person->email; ?></td>
-        <td><a href="edit.php?id=<?= $person->id ?>" class="contact-items">Editar</a>
-         <a onclick="return confirm('Tem certeza que deseja deletar este aluno?')" href="delete.php?id=<?= $person->id ?>" class='contact-items'>Deletar</a></td>
+        <td>
+          <a onclick="return confirm('Tem certeza que deseja atualizar este cliente?')" href="edit.php?id=<?= $person->id ?>" class="contact-items">Editar</a>
+         <a onclick="return confirm('Tem certeza que deseja deletar este cliente?')" href="delete.php?id=<?= $person->id ?>" class='contact-items'>Deletar</a>
+       </td>
 
     </tr>
    </tbody>

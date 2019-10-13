@@ -14,7 +14,7 @@
     $statement = $connection->prepare($sql);
     $statement->execute([':id' => $id ]);
     $person = $statement->fetch(PDO::FETCH_OBJ);
-    if (isset ($_POST['nome']) && isset($_POST['sexo']) && isset($_POST['cpf']) && isset($_POST['telefone']) && isset($_POST['email'])) 
+    if (isset ($_POST['nome']) && isset($_POST['sexo']) && isset($_POST['cpf']) && isset($_POST['telefone']) && isset($_POST['email']) ) 
     {
 
       $nome = $_POST['nome'];
@@ -22,10 +22,10 @@
       $cpf = $_POST['cpf'];
       $telefone = $_POST['telefone'];
       $email = $_POST['email'];
-      $sql = 'UPDATE cotacao SET nome=:nome, sexo=:sexo, cpf=:cpf, telefone=:telefone, email=:email, WHERE id=:id';
+      $sql = 'UPDATE cotacao SET nome=:nome, sexo=:sexo, cpf=:cpf, telefone=:telefone, email=:email WHERE id=:id';
       $statement = $connection->prepare($sql);
       if ($statement->execute([':nome' => $nome, ':sexo' => $sexo, ':cpf' => $cpf, ':telefone' => $telefone,':email' => $email, ':id' => $id])) {
-        
+      
         header("Location: exibir.php");
       }
 
@@ -57,25 +57,18 @@
 
  <div class="contact">
       <div class="contact-text">
-        <div class="message">
-           <?php if(!empty($message)): ?>
-           
-              <?= $message; ?>
-           
-           <?php endif; ?>
-      </div>
-
-       <form method="post">
+        <form  method="post">
          <div class="contact-items">
           <h2>Atualizar Cotação</h2>
-          <input value="<?= $person->nome; ?>" type="text" name="nome" id="nome" >
-          <input value="<?= $person->sexo; ?>" type="text" name="sexo" id="sexo" >
-          <input value="<?= $person->cpf; ?>" type="text" name="cpf" id="cpf" >
-          <input value="<?= $person->telefone; ?>" type="text" name="telefone" id="telefone" >
-          <input value="<?= $person->email; ?>" type="text" name="email" id="email">
-          <button  type="submit">Atualizar Cotação</button>
+          <input value="<?= $person->nome; ?>" type="text" name="nome" id="nome" placeholder="Seu Nome">
+          <input value="<?= $person->sexo; ?>" type="text" name="sexo" id="sexo" placeholder="Sexo">
+          <input value="<?= $person->cpf; ?>" type="text" name="cpf" id="cpf" placeholder="CPF">
+          <input value="<?= $person->telefone; ?>"  type="text" name="telefone" id="telefone" placeholder="Telefone">
+          <input value="<?= $person->email; ?>" type="text" name="email" id="email" placeholder="Seu email">
+          <button type="submit">Atualizar Cotação</button>
          </div>
         </form>
+
        </div>
     </div> 
 
