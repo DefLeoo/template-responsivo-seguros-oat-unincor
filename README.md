@@ -22,5 +22,11 @@ Telas do sistema:<br>
 
 ![Captura de tela de 2019-10-13 13-00-43](https://user-images.githubusercontent.com/27355729/66718524-48f20a80-edbb-11e9-8f35-44b2222bc0a6.png)
 
+<br>
+<br>
+##
+<br>
+<br>
+![Captura de tela de 2019-10-13 13-14-48](https://user-images.githubusercontent.com/27355729/66718559-9b332b80-edbb-11e9-8ddb-c2f5ebf42c35.png)
 
 
